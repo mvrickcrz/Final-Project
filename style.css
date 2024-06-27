@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+.card-content{
+    padding: 60px;
+    background-color: #874F41;
+}
+
+.card-content h1{
+    font-family: "Abril Fatface", serif;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.card-content p{
+    text-align: justify;
+}
+
+.card-content{
+    padding: 25px;
+}
+
+.carousel{
+    padding: 50px;
+    background-color: transparent;
+}
+
+.carousel-inner p, h5{
+    color: white;
+}
+
+.container h1{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+footer{
+    display: block;
+    clear: both;
+    background-color: #244855;
+    height: 10%;
+}
+
+footer img{
+    width: 250px;
+    padding: 10px;
+    float: left;
+}
+
+footer #name{
+    display: block;
+    clear: both;
+    width: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.navbar{
+    background-color: #244855;
+    border-radius: 80px;
+    margin: 10px;
+}
+
+.navbar-nav i{
+    vertical-align: bottom;
+}
+
+.navbar-brand img, #offcanvasNavbarLabel img{
+    max-width: 100px;
+}
+
+.nav-link{
+    color: #FBE9D0;
+    transition: 0.5s;
+    background-color: #244855;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, serif;
+}
+
+.nav-link:hover{
+    transform: perspective(600px) translateZ(90px);
+    color:#E64833;
+}
+.navbar-nav{
+    background-color: transparent;
+    color: #244855;
+}
+
+.navbar-toggler{
+    border:none;
+    font-size: 1.5rem;
+    transition: 0.3s background-color;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.offcanvas{
+    background-color: #244855;
+}
+
+.offcanvas-header{
+    background-color: #244855;
+}
+
+.offcanvas-title{
+    color: #FBe9d0;
+}
+
+.offcanvas-body{
+    background-color: transparent;
+}
+
+.nav-link{
+    color:#FBE9D0;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-toggler:hover, .btn-close:hover{
+    color: rgb(108, 105, 105);
+}
+
+.navbar-toggler:hover::before, .btn-close:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.sv-ptf{
+    background-color: #874F41;
+}
+
+.hero-section{
+    background-color: #E64833;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    content:" ";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Abril Fatface", serif;
+}
+
+.hero-section p{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-head h1{
+    background-color: #244855;
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    color: white;
+    margin: 0px;
+    padding: 50px;
+}
