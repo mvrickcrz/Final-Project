@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --clr: #0ab3ff;
+}
+
+main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2630;
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+form{
+    background-color: #29313c;
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+form h2{
+    color: #FFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+
+form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    color: #FFF;
+    font-size: 1em;
+}
+
+form label{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+}
+
+form label span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+form .inputBox input:focus ~ label span, input:valid ~ label span{
+    color: var(--clr);
+    letter-spacing: 0.15e,;
+    transform: translateY(-20px);
+}
+
+form .inputBox input:focus, input:valid{
+    border-bottom: 2px solid var(--clr);
+}
+
+form .inputBox input[type=submit]{
+    background: var(--clr);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2630;
+    font-size: 1.15em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form .inputBox input[type=submit]:hover{
+    letter-spacing: 0.25em;
+}
+
+form p{
+    color: #FFF;
+}
+
+form a{
+    text-decoration: none;
+    color: var(--clr);
+    font-weight: 500;
+}
+
+body{
+    background-color:#E64833;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: #244855;
+    height: 31%;
+    padding: 10px;
+}
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    padding: 0px;
+}
+
+footer #name{
+    display: block;
+    clear: both;
+    width: 50%;
+    padding: 10px;
+    color: white;
+}
+
+footer p{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, serif;
+}
+
+.hero-section{
+    background-color: #E64833;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    content:" ";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Abril Fatface", serif;
+}
+
+.hero-section p{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    background-color: #244855;
+    border-radius: 80px;
+    margin: 10px;
+}
+
+.navbar-nav i{
+    vertical-align: bottom;
+}
+
+.navbar-brand img, #offcanvasNavbarLabel img{
+    max-width: 100px;
+}
+
+.nav-link{
+    color: #FBE9D0;
+    transition: 0.5s;
+    background-color: #244855;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, serif;
+}
+
+.nav-link:hover{
+    transform: perspective(600px) translateZ(90px);
+    color:#E64833;
+}
+.navbar-nav{
+    background-color: transparent;
+    color: #244855;
+}
+
+.navbar-toggler{
+    border:none;
+    font-size: 1.5rem;
+    transition: 0.3s background-color;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+section{
+    float: right;
+}
