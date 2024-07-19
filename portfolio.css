@@ -1,36 +1,198 @@
-body{
-    background-color:#E64833;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
 }
 
-footer{
-    display: block;
-    clear: both;
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .hero-section{
+        background-color: #E64833;
+        background-size: cover;
+        width: 100%;
+        max-height: 78.3vh;
+    }
+
+    .hero-section::before{
+        background-color: rgba(0, 0, 0, 0.5);
+        content:" ";
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .hero-section .container{
+        max-height: 100%;
+        z-index: 8;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero-section h1{
+        text-align: center;
+        font-size: 60px;
+        font-family: "Abril Fatface", serif;
+    }
+
+    .hero-section p{
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .hero-section .container img{
+        max-width: 50%;
+        max-height: 50%;
+        border-radius: 360px;
+    }
+
+    .vid-edit{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    
+    .media{
+        padding: 100px;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .text h1{
+        font-family: 'Abril Fatface', sans-serif;
+        color: #FBE9D0;
+    }
+    
+    .text p{
+        font-family: 'Poppins', sans-serif;
+        color: #FBE9D0;
+
+        
+    }
+
+    .media iframe{
+        width: 100%;
+        height:25%;
+    }
+
+    .socials{
+        display: inline;
+    }
+
+    .socials ul{
+        display: flex;
+        text-align: center;
+        padding:0;
+    }
+
+    .socs{
+        display: flex;
+        justify-content: center;
+    }
+
+    .socs ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 250;
+        text-decoration: none;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.navbar{
     background-color: #244855;
-    height: 31%;
-    padding: 10px;
+    border-radius: 25px;
+    margin: 15px;
 }
 
-footer img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 125px;
-    padding: 0px;
+.navbar-nav{
+    background-color: transparent;
+    color: #244855;
 }
 
-footer #name{
-    display: block;
-    clear: both;
-    width: 50%;
-    padding: 10px;
-    color: white;
+.navbar-nav i{
+    vertical-align: bottom;
 }
 
-footer p{
-    padding: 30px;
-    text-align: center;
-    color: white;
+.navbar-brand img, #offcanvasNavbarLabel img{
+    max-width: 80px;
+}
+
+.nav-link{
+    color: #FBE9D0;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+    background-color: #244855;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, serif;
+}
+
+.nav-link:hover{
+    transform: perspective(600px) translateZ(50px);
+    color:#E64833;
+}
+
+.navbar-toggler{
+    border:none;
+    font-size: 1.5rem;
+    transition: 0.3s background-color;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler:hover, .btn-close:hover{
+    color: rgb(108, 105, 105);
+}
+
+.navbar-toggler:hover::before, .btn-close:hover::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.offcanvas{
+    background-color: #244855;
+    text-align: center;
+}
+
+.offcanvas .nav-link{
+    padding: 1rem;
+}
+
+.offcanvas-header{
+    background-color: #244855;
+}
+
+.offcanvas-title{
+    color: #FBe9d0;
+}
+
+.offcanvas-body{
+    background-color: transparent;
 }
 
 .hero-section{
@@ -67,42 +229,177 @@ footer p{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.navbar{
-    background-color: #244855;
-    border-radius: 80px;
-    margin: 10px;
+.hero-section{
+    background-color: #E64833;
+    background-size: cover;
+    width: 100%;
+    max-height: 81vh;
 }
 
-.navbar-nav i{
-    vertical-align: bottom;
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    content:" ";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.navbar-brand img, #offcanvasNavbarLabel img{
-    max-width: 100px;
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
 }
 
-.nav-link{
+.hero-section h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: "Abril Fatface", serif;
+}
+
+.hero-section p{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #E64833;
+}
+
+main{
+    background-image: url(bg-h.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vid-edit{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.media{
+    padding: 100px;
+    background-color: transparent;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text h1{
+    font-family: 'Abril Fatface', sans-serif;
     color: #FBE9D0;
-    transition: 0.5s;
+}
+
+.text p{
+    font-family: 'Poppins', sans-serif;
+    color: #FBE9D0;
+}
+
+footer{
+    display: flex;
     background-color: #244855;
+    padding: 5px;
+    border: 0px;
+    justify-content: center;
+}
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    padding: 0px;
+}
+
+footer #name{
+    display: block;
+    clear: both;
+    width: 50%;
+    padding: 0px;
+    color: white;
+}
+
+footer p{
+    padding: 0px;
+    text-align: center;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, serif;
 }
 
-.nav-link:hover{
-    transform: perspective(600px) translateZ(90px);
-    color:#E64833;
-}
-.navbar-nav{
-    background-color: transparent;
-    color: #244855;
+footer div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
 }
 
-.navbar-toggler{
-    border:none;
-    font-size: 1.5rem;
-    transition: 0.3s background-color;
+.fa {
+    padding: 50px 20px 20px 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 360px;
+    vertical-align: bottom;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    height: 50px;
+  }
+
+  .fa-instagram {
+    background: #E64833;
+    color: white;
+    height: 50px;
+  }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  height: 50px;
 }
-.navbar-toggler:focus, .btn-close:focus{
-    box-shadow: none;
-    outline: none;
+
+.socials{
+    width: 100%;
+    padding: 25px;
 }
+
+.socials a{
+    padding: 10px;
+}
+
+.socs ul{
+    display: flex;
+    font-size: 250;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.socs li{
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.socs p{
+    color: #FBE9D0;
+    font-size: 2rem;
+}
+
+.socs a:hover{
+    transition: 0.5s;
+    transform: perspective(600px) translateZ(200px);
+}
+
